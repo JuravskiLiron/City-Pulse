@@ -1,0 +1,6 @@
+@hostname = localhost
+@port = 5000
+@host = {{hostname}}:{{port}}
+
+GET http://{{host}}/api/cities
+Accept: application/json
