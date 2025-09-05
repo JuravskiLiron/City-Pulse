@@ -1,6 +1,8 @@
+using CityPulse.Domain.Common;
+
 namespace CityPulse.Domain.Entities;
 
-public class WeatherForecast
+public class WeatherForecast : BaseEntity
 {
     public DateOnly Date { get; set; }
     public int TemperatureC { get; set; }

@@ -12,6 +12,7 @@ The backend solution under `backend/` contains the following projects:
 - **CityPulse.Application** – application services and business logic.
 - **CityPulse.Infrastructure** – infrastructure and data access configured for PostgreSQL using Entity Framework Core.
 - **CityPulse.Api** – ASP.NET Core Web API project exposing the endpoints.
+- **CityPulse.Tests** – xUnit test project with sample tests.
 
 ### Configuration
 Update the connection string in `backend/CityPulse.Api/appsettings.json` (and the development variant) to point to your PostgreSQL database.
@@ -27,3 +28,14 @@ dotnet run --project backend/CityPulse.Api
 ```
 
 The API includes a sample `WeatherForecast` endpoint at `/api/WeatherForecast` and a health check at `/api/Health`.
+
+### Running tests
+```
+dotnet test backend/CityPulse.sln
+```
+
+### Docker
+A `docker-compose.yml` is available under `backend/` to launch the API along with a PostgreSQL instance:
+```
+docker compose up --build
+```

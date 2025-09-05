@@ -10,6 +10,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CityPulse.Domain", "CityPul
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CityPulse.Infrastructure", "CityPulse.Infrastructure/CityPulse.Infrastructure.csproj", "{9345C821-5F94-4F7E-A2D9-58A4A42D2D92}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CityPulse.Tests", "CityPulse.Tests/CityPulse.Tests.csproj", "{36251F39-4931-4D58-9DA2-DE9336B9FBDC}"
+EndProject
 Global
     GlobalSection(SolutionConfigurationPlatforms) = preSolution
         Debug|Any CPU = Debug|Any CPU
@@ -32,6 +34,10 @@ Global
         {9345C821-5F94-4F7E-A2D9-58A4A42D2D92}.Debug|Any CPU.Build.0 = Debug|Any CPU
         {9345C821-5F94-4F7E-A2D9-58A4A42D2D92}.Release|Any CPU.ActiveCfg = Release|Any CPU
         {9345C821-5F94-4F7E-A2D9-58A4A42D2D92}.Release|Any CPU.Build.0 = Release|Any CPU
+        {36251F39-4931-4D58-9DA2-DE9336B9FBDC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+        {36251F39-4931-4D58-9DA2-DE9336B9FBDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+        {36251F39-4931-4D58-9DA2-DE9336B9FBDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+        {36251F39-4931-4D58-9DA2-DE9336B9FBDC}.Release|Any CPU.Build.0 = Release|Any CPU
     EndGlobalSection
     GlobalSection(SolutionProperties) = preSolution
         HideSolutionNode = FALSE
