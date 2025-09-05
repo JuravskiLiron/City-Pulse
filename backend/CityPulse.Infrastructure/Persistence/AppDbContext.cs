@@ -1,4 +1,3 @@
-using CityPulse.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 
 namespace CityPulse.Infrastructure.Persistence;
@@ -10,5 +9,5 @@ public class AppDbContext : DbContext
     {
     }
 
-    public DbSet<City> Cities => Set<City>();
+    // TODO: Add DbSet<T> properties for your entities
 }

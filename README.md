@@ -2,7 +2,7 @@
 
 This repository is organized into separate frontend and backend projects.
 
-- **backend/** – ASP.NET Core backend following Clean Architecture.
+- **backend/** – ASP.NET Core backend following a Clean Architecture.
 - **frontend/** – placeholder for the React frontend.
 
 ### Backend structure
@@ -14,7 +14,7 @@ The backend solution under `backend/` contains the following projects:
 - **CityPulse.Api** – ASP.NET Core Web API project exposing the endpoints.
 
 ### Configuration
-Update the connection string in `backend/src/CityPulse.Api/appsettings.json` to point to your PostgreSQL database.
+Update the connection string in `backend/CityPulse.Api/appsettings.json` (and the development variant) to point to your PostgreSQL database.
 
 ### Building
 ```
@@ -23,5 +23,7 @@ dotnet build backend/CityPulse.sln
 
 ### Running the API
 ```
-dotnet run --project backend/src/CityPulse.Api
+dotnet run --project backend/CityPulse.Api
 ```
+
+The API includes a sample `WeatherForecast` endpoint at `/api/WeatherForecast` and a health check at `/api/Health`.
