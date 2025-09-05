@@ -1,3 +1,4 @@
+using CityPulse.Api.Endpoints;
 using CityPulse.Application;
 using CityPulse.Infrastructure;
 
@@ -5,7 +6,6 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddApplication();
 builder.Services.AddInfrastructure(builder.Configuration);
-builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
@@ -17,6 +17,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-app.MapControllers();
+app.MapHealthEndpoints();
+app.MapTodoItemEndpoints();
 
 app.Run();

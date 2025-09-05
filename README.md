@@ -27,7 +27,10 @@ dotnet build backend/CityPulse.sln
 dotnet run --project backend/CityPulse.Api
 ```
 
-The API includes a sample `TodoItems` endpoint at `/api/TodoItems` and a health check at `/api/Health`.
+The API exposes sample endpoints defined under `CityPulse.Api/Endpoints`:
+
+- `GET /health` – simple health check.
+- CRUD operations under `/api/todoitems`.
 
 ### Running tests
 ```

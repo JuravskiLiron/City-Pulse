@@ -4,3 +4,7 @@
 
 GET http://{{host}}/api/todoitems
 Accept: application/json
+
+### Health check
+GET http://{{host}}/health
+Accept: application/json
