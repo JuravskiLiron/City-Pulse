@@ -1,4 +1,6 @@
+using CityPulse.Application.Interfaces;
 using CityPulse.Infrastructure.Persistence;
+using CityPulse.Infrastructure.Repositories;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -11,6 +13,7 @@ public static class DependencyInjection
     {
         services.AddDbContext<AppDbContext>(options =>
             options.UseNpgsql(configuration.GetConnectionString("DefaultConnection")));
+        services.AddScoped<ICityRepository, CityRepository>();
         return services;
     }
 }
