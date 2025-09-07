@@ -1,0 +1,10 @@
+@hostname = localhost
+@port = 5000
+@host = {{hostname}}:{{port}}
+
+GET http://{{host}}/api/todoitems
+Accept: application/json
+
+### Health check
+GET http://{{host}}/health
+Accept: application/json
