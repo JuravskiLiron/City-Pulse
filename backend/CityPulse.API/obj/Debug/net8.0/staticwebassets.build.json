@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "B4pb+FcxHWPza8tdJTruYzuQ4UUYSoSplgr32TyNK+c=",
+  "Source": "CityPulse.API",
+  "BasePath": "_content/CityPulse.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
